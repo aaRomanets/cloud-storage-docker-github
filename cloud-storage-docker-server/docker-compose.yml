@@ -1,0 +1,24 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    container_name: server-web-cloud-storage
+    command: yarn start:dev
+    volumes:
+      - /app
+      - /app/node_modules
+    ports:
+      - "3027:4027"
+  api:
+    build: .
+    container_name: server-api-cloud-storage
+    ports:
+      - "4027:3027"
+    environment:
+      PORT: 3027
+      NAME: Aleksandr
+    volumes:
+      - /app
+      - /app/node_modules
+volumes:
+  mongo_db: {}

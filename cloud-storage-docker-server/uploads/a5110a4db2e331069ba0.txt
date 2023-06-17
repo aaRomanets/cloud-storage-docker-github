@@ -1,0 +1,59 @@
+//вытаскиваем метку ошибок
+//pulling out the label of errors
+
+//вытаскиваем метку отправления в хранилище store данных об авторизованном пользователе
+//pulling out the label of sending in storage store the data about authorized user
+
+//функция запроса на авторизацию пользователя
+//the request function on user authorization 
+
+//запрос на сервер по авторизации зарегистрированного пользователя
+//request on server according to authorization of registered user
+
+//в случае успеха вытаскиваем токен авторизации зарегистрированного пользователя
+//in the case of success pulling out token of authorization of registered user
+
+//пишем этот токен в localStorage через запись jwtToken
+//writing this token in localStorage via record jwtToken
+
+//Формируем state.auth по token в store по authReducer 
+//Creating state.auth according to token in store according to authReducer 
+
+//получаем всю информацию об авторизованном пользователе
+//receiving the total information about authorized user
+
+//переходим в errorReducer в случае неудачной авторизации
+//transmiting to errorReducer in the case of poor authorization
+
+//функция запроса на регистрацию пользователя
+//the request function to registration user
+
+//по axios делаем post запрос на сервер по регистрации пользователя
+//according to axios making post request on server according to registration user
+
+//в случае успеха переходим на страницу авторизации пользователя /login 
+//in the case of success going to on page of authorization user /login 
+
+//переходим в errorReducer в случае неудачной регистрации
+//going to errorReducer in the case of poor registration
+
+//функция получения с сервера информации об авторизованном пользователе
+//the function of receiving with server the information about authorized user
+
+//получаем информацию об авторизованном пользователе с сервера и отправляем ее в хранилище store
+//receiving information about authorized user with server and sending it to storage store
+
+//функция отправления информации об авторизованном пользователе в хранилище store
+//the function of sending information about authorized user to storage store
+
+//функция отмены регистрации пользователя
+//the function of cancelling user registration
+
+//отменяем авторизацию пользователя по jwtToken
+//canceling user authorization according to jwtToken
+
+//Создаем пустой state.auth по token в store по authReducer 
+//Creating the empty state.auth according to token in store according to authReducer 
+
+//закачиваем в хранилище пустую информацию о пользователе
+//uploading to storage empty information about user
